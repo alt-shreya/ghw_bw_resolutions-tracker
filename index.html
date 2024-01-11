@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Habit Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Enter Resolutions</a></li>
+            <li><a href="tracker.html">Track Progress</a></li>
+            <li><a href="statistics.html">View Statistics</a></li>
+        </ul>
+    </nav>
+
+    <!-- Add a form for entering resolutions and tracking progress -->
+    <main>
+        <div id="add-resolution">
+            <label for="resolutions">Enter Your Resolution:</label>
+            <input type="text" id="resolutions">
+            <button onclick="storeResolutions()">Add Resolution</button>
+        </div>
+
+        <div id="track-progress">
+            <h2>Track Progress</h2>
+            <div id="resolutions-container"></div>
+            <button onclick="trackProgress()">Track Progress</button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
